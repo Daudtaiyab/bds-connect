@@ -1,0 +1,17 @@
+$(document).ready(function(){
+    $('.menubar').click(function(){
+        $('.menu-panel').toggleClass('active');
+        $('.menu-overlay').addClass('active');
+        $('body').addClass('no-scroll');
+    })
+    $('.bi-x-lg').click(function(){
+        $('.menu-panel').removeClass('active');
+        $('.menu-overlay').removeClass('active');
+        $('body').removeClass('no-scroll');
+    })
+    $('.menu-overlay').click(function(){
+        $('.menu-panel').removeClass('active');
+        $(this).removeClass('active');
+        $('body').removeClass('no-scroll');
+    })
+})

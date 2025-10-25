@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root{
+	--theme-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+	--theme-radius: 12px;
+	--blue-color:#FAD300;
+	--orange-color:#E9761A;
+}
+body{
+	height: 100vh;
+	font-family: 'Roboto', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Raleway' ,sans-serif;
+}
+.main-wrapper{
+	padding: 20px;
+	height: 100%;
+	/*background:#e2e2e2;*/
+	background-size: cover;
+    background-image: url(https://portal.bdsconnect.in/public/asset/img/login-bg.jpg);
+}
+.white-box{
+	height: 100%;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow-y: auto;
+	padding: 40px 20px;
+	position: relative;
+}
+.connect-design{
+    background: white;
+    border-radius: var(--theme-radius);
+}
+.login-form-outer{
+	width: 100%;
+	height: auto;
+}
+.login-form{
+	width: 100%;
+	padding: 20px;
+	background:#e9761a;
+	margin-top:-40px;
+	border-radius:var(--theme-radius);
+}
+.logo-img .bds-logo img{
+	max-width: 250px;
+}
+.logo-img .bds-logo{
+	padding: 5px 10px;
+}
+.logo-img .aps-logo img{
+	height: 50px;
+}
+.logo-img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height:100%;
+	padding:20px;
+	flex-direction:column;
+}
+.logo-img h3{
+    text-align:center;
+    text-transform:uppercase;
+    font-weight:600;
+    margin-top:15px;
+}
+.logo-img h3 span{
+    color:var(--orange-color);
+    font-weight:900;
+}
+.login-form label input[type="checkbox"]{
+    display:inline-block;
+}
+.rememberme{
+    color:white;
+    font-weight:bold;
+    text-decoration:none;
+}
+.logo-img .aps-logo{
+	padding: 5px 10px;
+}
+.login-form h4{
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color:white;
+}
+.login-form .line{
+	height: 4px;
+	width: 40px;
+	background: white;
+	margin-bottom: 15px;
+}
+.registration-form-outer .login-form{
+    background:white;
+    margin-top:0;
+}
+.form-control:focus{
+	box-shadow: none;
+	border:2px solid var(--blue-color);
+}
+.button {
+ display: inline-block;
+ padding: 12px 24px;
+ border:none;
+ border-radius: 60px;
+ transition: all 0.2s ease-in;
+ position: relative;
+ overflow: hidden;
+ width:100%;
+ margin-top:15px;
+ font-size: 15px;
+ background: white;
+    color:black;
+ z-index: 1;
+}
+.button:hover{
+	background: var(--blue-color);
+	color: white;
+}
+p,a,li,label,button{
+	letter-spacing: 1px;
+	font-size: 15px;
+}
+.registration-form-outer{
+	padding: 40px 30px;
+	background: white;
+	border-radius: 60px 0 0 60px;
+}
+.registration-form-outer .login-form{
+	box-shadow:none;
+	border-radius: 0;
+}
+.registration-side-content{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100%;
+	background:#DFDFDF;
+	padding: 20px;
+}
+.registration-side-content h4{
+	text-align: center;
+	text-transform: uppercase;
+}
+.registration-side-content h4 span{
+	font-weight: 900;
+	font-size: 45px;
+	letter-spacing: 10px;
+}
+.registration-outer{
+	box-shadow: var(--theme-shadow);
+	border-radius: var(--theme-radius);
+	overflow: hidden;
+	background: #DFDFDF;
+}
+.checkboxes{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.checkboxes div{
+	margin-right: 10px;
+}
+/* Customize the label (the container) */
+.checkbox{
+ display: block;
+ position: relative;
+ padding-left: 35px;
+ margin-bottom: 12px;
+ cursor: pointer;
+ font-size: 16px;
+ user-select: none;
+ color:black;
+}
+label input[type="checkbox"] {
+    display: none;
+}
+.card-img {
+    background-color: var(--blue-color);
+    padding: 10px;
+    border-radius: 0px;
+    width: 100%;
+    transition: .3s ease;
+    border-radius: 8px 8px 0 0;
+}
+.card-info {
+    padding: 20px;
+}
+.text-title {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0;
+}
+.checkbox:checked ~ .card:before {
+    display: block;
+}
+.card:before {
+    content: '\F272';
+    font-family: bootstrap-icons !important;
+    font-weight: 600;
+    background: #1bcb1b;
+    display: none;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    line-height: 35px;
+    color: white;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    border-radius: 50%;
+}
+.checkbox:checked ~ .card {
+    border-radius: 8px;
+    filter: grayscale(80%);
+}
+.logout-btn{
+    padding:5px;
+    background:var(--blue-color);
+    color:white;
+}
+.button.no-border {
+    width: 100%;
+    border: none;
+    border-radius: 8px !important;
+    text-align: center;
+    background: var(--blue-color);
+    color: white;
+    text-decoration: none;
+    border: 1px solid var(--blue-color);
+}
+/* Hide the browser's default checkbox */
+.checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #efefef;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkbox input:checked ~ .checkmark {
+  background-color: var(--blue-color);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 0 12px 12px 0;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: white;
+  border-radius: 0 12px 12px 0;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.dataTables_scrollHeadInner,.dataTables_scrollHeadInner table, .dataTables_scrollBody table{
+	width: 100% !important;
+}
+.swiper-pagination{
+ display:none !important;   
+}
+.product-card.disabled {
+    filter: opacity(0.5);
+}
